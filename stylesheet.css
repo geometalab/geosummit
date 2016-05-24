@@ -48,3 +48,10 @@ table td {
 table th {
     border: solid 1px;
 }
+
+@media all and (max-width: 800px){
+    .room {
+        margin: 5px;
+        width: calc(100% - 5px);
+    }
+}
