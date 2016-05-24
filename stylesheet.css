@@ -12,23 +12,25 @@ header {
     background-color: darkgray;
 }
 
-main {
+#logo {
+    width: 30%;
+}
+
+#main {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    flex-flow: row wrap;
     flex-wrap: wrap;
 }
 
-#logo {
-    width: 30%;
-}
-
 .room{
-
     margin: 5px;
-    width: calc((100% / 3) - 10px);
+    flex-basis: calc((100% / 3) - 10px);
+    min-width: 400px;
+    max-width: calc((100% / 3) - 10px);
 }
 
 .tile {
