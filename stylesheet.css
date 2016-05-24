@@ -49,9 +49,11 @@ table th {
     border: solid 1px;
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 850px){
     .room {
         margin: 5px;
-        width: calc(100% - 5px);
+        min-width: calc(100% - 5px);
+        max-width: calc(100% - 5px);
+        flex-basis: calc(100% - 5px);
     }
 }
