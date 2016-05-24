@@ -1,0 +1,48 @@
+body {
+    background-color: #ebebeb;
+}
+
+body > * {
+    flex: 1 100%;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: darkgray;
+}
+
+main {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 30%;
+}
+
+.room{
+
+    margin: 5px;
+    width: calc((100% / 3) - 10px);
+}
+
+.tile {
+    margin-bottom: 5px;
+}
+
+table {
+    border: solid 1px;
+    border-collapse: collapse;
+}
+table td {
+    border: solid 1px;
+}
+
+table th {
+    border: solid 1px;
+}
