@@ -29,9 +29,9 @@ header {
 
 .room{
     margin: 5px;
-    flex-basis: calc((100% / 3) - 10px);
     min-width: 400px;
-    max-width: calc((100% / 3) - 10px);
+    max-width: calc(100% / 3 - 10px);
+    flex-basis: calc(100% / 3 - 10px);
 }
 
 .tile {
@@ -57,11 +57,16 @@ table th {
     padding: 5px;
 }
 
-@media all and (max-width: 850px){
+@media all and (max-width: 852px){
     .room {
-        margin: 5px;
-        min-width: calc(100% - 5px);
-        max-width: calc(100% - 5px);
-        flex-basis: calc(100% - 5px);
+        margin:0;
+        min-width: 100%;
+    }
+}
+
+@media all and (max-width: 1262px){
+    .room {
+        max-width: calc(100% /2 - 10px);
+        flex-basis: calc(100% / 2 - 10px);
     }
 }
