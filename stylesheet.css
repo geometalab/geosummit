@@ -74,11 +74,6 @@ table th {
 }
 
 @media all and (min-width: 800px) {
-
-    #main {
-        padding: 100px;
-    }
-
     .header {
         width: 100%;
         padding: 0;
@@ -173,7 +168,6 @@ table th {
 }
 
 @media all and (max-width: 800px) {
-
     .header {
         display: flex;
         background-color: darkgray;
