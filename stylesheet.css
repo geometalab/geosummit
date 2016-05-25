@@ -79,7 +79,7 @@ table th {
         padding: 100px;
     }
 
-    header {
+    .header {
         width: 100%;
         padding: 0;
         background-color: darkgray;
@@ -174,7 +174,7 @@ table th {
 
 @media all and (max-width: 800px) {
 
-    header {
+    .header {
         display: flex;
         background-color: darkgray;
         text-decoration: none;
@@ -186,7 +186,7 @@ table th {
         box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
     }
 
-    header img {
+    .header img {
         margin-right: 20px;
         width: 20%;
         height: 20%;
