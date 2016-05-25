@@ -7,26 +7,54 @@
     <title>GEOSummit</title>
 </head>
 <body onload="buttonOneAction()">
-    <header class="header">
-        <div class="nav">
+<div id="container">
+    <div id="nav-desktop">
+        <header class="header">
+            <div class="nav">
+                <ul>
+                    <li class="dropmenu"><a href="#"><i class="fa fa-bars"></i></a>
+                        <ul>
+                            <li onclick="buttonOneAction()"><a><b>08.06 Morgen</b></a></li>
+                            <li><a onclick="buttonTwoAction()"><b>08.06 Nachmittag</b></a></li>
+                            <li onclick="buttonThreeAction()"><a><b>09.06 Morgen</b></a></li>
+                            <li onclick="buttonFourAction()"><a><b>09.06 Nachmittag</b></a></li>
+                        </ul>
+                    </li>
+                    <li><img src="img/GEO_Summit_trans.png" id="logo"></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="nav-mobil">
+        <header>
+            <div id="navigation">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <img src="img/GEO_Summit_trans.png" id="logo-mob">
+        </header>
+        <nav>
             <ul>
-                <li class="dropmenu"><a href="#"><i class="fa fa-bars"></i></a>
-                    <ul>
-                        <li onclick="buttonOneAction()"><a><b>08.06 Morgen</b></a></li>
-                        <li><a onclick="buttonTwoAction()"><b>08.06 Nachmittag</b></a></li>
-                        <li onclick="buttonThreeAction()"><a><b>09.06 Morgen</b></a></li>
-                        <li onclick="buttonFourAction()"><a><b>09.06 Nachmittag</b></a></li>
-                    </ul>
-                </li>
-                <li><img src="img/GEO_Summit_trans.png" id="logo"></li>
+                <li onclick="buttonOneAction()"><a><b>08.06 Morgen</b></a></li>
+                <li onclick="buttonTwoAction()"><b>08.06 Nachmittag</b></li>
+                <li onclick="buttonThreeAction()"><a><b>09.06 Morgen</b></a></li>
+                <li onclick="buttonFourAction()"><a><b>09.06 Nachmittag</b></a></li>
             </ul>
-        </div>
-    </header>
-
+        </nav>
+    </div>
+    <div id="contentLayer"></div>
+    <div id="content">
     <main id="main"></main>
+    </div>
+</div>
 </body>
 
+<script src="libs/script/jquery-1.11.3.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
 <script type="text/javascript" src="menu.js" ></script>
+<script src="mobilemenu.js"></script>
 
 <template id="part1">
     <div class="room">
