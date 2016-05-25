@@ -13,9 +13,6 @@ header {
     background-color: darkgray;
 }
 
-#logo {
-    width: 30%;
-}
 
 #main {
     display: -webkit-box;
@@ -77,4 +74,81 @@ table th {
         margin:0;
         min-width: 100%;
     }
+}
+
+.nav {
+    overflow: hidden;
+}
+.nav ul {
+
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+    text-align: left;
+}
+
+.nav a {
+    background-color: darkgray;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 15px;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: gray;
+}
+.nav a.active {
+    background-color: #aaa;
+    color: #444;
+    cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+    font-size: .8em;
+}
+.nav img {
+    max-width: 300px;
+    margin-bottom: -16px;
+}
+.nav li {
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1em;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.nav a {
+    border-bottom: none;
+}
+
+.nav > ul > li {
+    text-align: center;
+    margin-right: 5px;
+}
+
+.nav > ul > li > a {
+    padding-left: 0;
+}
+
+/* Sub Menus */
+.nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li {
+    display: block;
 }
