@@ -21,14 +21,14 @@ body {
     flex-wrap: wrap;
 }
 
-.room{
+.room {
     margin: 5px;
     min-width: 350px;
     max-width: calc(100% / 4 - 10px);
     flex-basis: calc(100% / 4 - 10px);
 }
 
-.tile {
+.tile, .pause-tile, .tile-group-before-break {
     margin-bottom: 5px;
 }
 
