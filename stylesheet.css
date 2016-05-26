@@ -30,12 +30,15 @@ body {
 
 .tile {
     margin-bottom: 5px;
+    background-color: #dcddde;
 }
 
 table {
     min-width: 100%;
     border: solid 1px;
     border-collapse: collapse;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
 }
 table td {
     padding: 5px;
@@ -44,6 +47,7 @@ table td {
 
 table th {
     border: solid 1px;
+    background-color: #bfc0c1;
 }
 
 .pause {
@@ -75,8 +79,7 @@ table th {
 
 @media all and (min-width: 800px) {
     .header {
-        display: flex;
-        flex-direction: row;
+        display: inline-flex;
         justify-content: space-between;
         width: 100%;
         padding: 0;
@@ -87,91 +90,40 @@ table th {
         display: none;
     }
 
-    .nav {
-        width: 130px;
-        overflow: hidden;
-    }
-
-    .header h1 {
-        text-align: right;
-        margin: 0 15px 0 0;
-    }
-
-    .nav ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    .nav li {
-    }
-
-    .nav a {
-        background-color: darkgray;
-        text-decoration: none;
-        color: black;
-        display: block;
-        padding-left: 15px;
-        transition: .3s background-color;
-    }
-
-    .nav a:hover {
-        background-color: gray;
-    }
-
-    .nav a.active {
-        background-color: #aaa;
-        color: #444;
-        cursor: default;
-    }
-
-    /* Sub Menus */
-    .nav li li {
-        font-size: .8em;
-    }
-
     img {
         max-width: 300px;
         max-height: 42px;
         margin-bottom: -16px;
     }
 
-    .nav li {
-        width: 130px;
-        border-bottom: none;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1em;
+    /* Style the list */
+    ul.tab {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: darkgray;
+    }
+
+    /* Float the list items side by side */
+    ul.tab li {float: left;}
+
+    /* Style the links inside the list items */
+    ul.tab li a {
         display: inline-block;
-        margin-right: -4px;
-    }
-
-    .nav a {
-        border-bottom: none;
-    }
-
-    .nav > ul > li {
+        color: black;
         text-align: center;
-        margin-right: 5px;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
     }
 
-    .nav > ul > li > a {
-        padding-left: 0;
-    }
+    /* Change background color of links on hover */
+    ul.tab li a:hover {background-color: #ddd;}
 
-    /* Sub Menus */
-    .nav li ul {
-        position: absolute;
-        display: none;
-        width: inherit;
-    }
-
-    .nav li:hover ul {
-        display: block;
-    }
-
-    .nav li ul li {
-        display: block;
-    }
+    /* Create an active/current tablink class */
+    ul.tab li a:focus, .active {background-color: #ccc;}
 }
 
 @media all and (max-width: 800px) {

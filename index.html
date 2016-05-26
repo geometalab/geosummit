@@ -11,20 +11,15 @@
 <div id="container">
     <div id="nav-desktop">
         <header class="header">
-            <div class="nav">
-                <ul>
-                    <li class="dropmenu"><a href="#"><i class="fa fa-bars"></i></a>
-                        <ul>
-                            <li onclick="buttonOneAction()"><a><b>08.06 Morgen</b></a></li>
-                            <li onclick="buttonTwoAction()"><a><b>08.06 Nachmittag</b></a></li>
-                            <li onclick="buttonThreeAction()"><a><b>09.06 Morgen</b></a></li>
-                            <li onclick="buttonFourAction()"><a><b>09.06 Nachmittag</b></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
             <img src="img/GEO_Summit_trans.png" id="logo" />
-            <h1 id="dateText">Mittwoch Morgen</h1>
+            <div class="nav">
+                    <ul class="tab">
+                        <li class="active"><a class="tablinks" id="button1" onclick="buttonOneAction()"><b>08.06 Morgen</b></a></li>
+                        <li><a class="tablinks" id="button2" onclick="buttonTwoAction()"><b>08.06 Nachmittag</b></a></li>
+                        <li><a class="tablinks" id="button3" onclick="buttonThreeAction()"><b>09.06 Morgen</b></a></li>
+                        <li><a class="tablinks" id="button4" onclick="buttonFourAction()"><b>09.06 Nachmittag</b></a></li>
+                    </ul>
+            </div>
         </header>
     </div>
     <div class="nav-mobil">
