@@ -16,14 +16,15 @@
                     <li class="dropmenu"><a href="#"><i class="fa fa-bars"></i></a>
                         <ul>
                             <li onclick="buttonOneAction()"><a><b>08.06 Morgen</b></a></li>
-                            <li><a onclick="buttonTwoAction()"><b>08.06 Nachmittag</b></a></li>
+                            <li onclick="buttonTwoAction()"><a><b>08.06 Nachmittag</b></a></li>
                             <li onclick="buttonThreeAction()"><a><b>09.06 Morgen</b></a></li>
                             <li onclick="buttonFourAction()"><a><b>09.06 Nachmittag</b></a></li>
                         </ul>
                     </li>
-                    <li><img src="img/GEO_Summit_trans.png" id="logo"></li>
                 </ul>
             </div>
+            <img src="img/GEO_Summit_trans.png" id="logo" />
+            <h1 id="dateText">Mittwoch Morgen</h1>
         </header>
     </div>
     <div class="nav-mobil">
@@ -34,11 +35,12 @@
                 <div></div>
             </div>
             <img src="img/GEO_Summit_trans.png" id="logo-mob">
+            <h3 id="dateTextMob">Mi Morgen</h3>
         </header>
         <nav>
             <ul>
                 <li onclick="buttonOneAction()"><a><b>08.06 Morgen</b></a></li>
-                <li onclick="buttonTwoAction()"><b>08.06 Nachmittag</b></li>
+                <li onclick="buttonTwoAction()"><a><b>08.06 Nachmittag</b></a></li>
                 <li onclick="buttonThreeAction()"><a><b>09.06 Morgen</b></a></li>
                 <li onclick="buttonFourAction()"><a><b>09.06 Nachmittag</b></a></li>
             </ul>
@@ -53,9 +55,6 @@
 
 <script src="libs/script/jquery-1.11.3.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
-
-<script type="text/javascript" src="menu.js" ></script>
-<script src="mobilemenu.js"></script>
 
 <template id="part1">
     <div class="room">
@@ -872,4 +871,8 @@
         </div>
     </div>
 </template>
+
+<script type="text/javascript" src="menu.js" ></script>
+<script src="mobilemenu.js"></script>
+
 </html>
