@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta charset="UTF-8">
+    <title>GEOSummit</title>
+</head>
+<body onload="setGroupSizes()">
+<div id="container">
+    <div id="nav-desktop">
+        <header class="header">
+            <img src="img/GEO_Summit_trans.png" id="logo" />
+            <div class="nav">
+                <ul class="tab">
+                    <li><a class="tablinks" id="button1" href="index.html"><b>08.06 Morgen</b></a></li>
+                    <li><a class="tablinks" id="button2" href="wednesday-afternoon.html"><b>08.06 Nachmittag</b></a></li>
+                    <li><a class="tablinks" id="button3" href="thursday-morning.html"><b>09.06 Morgen</b></a></li>
+                    <li class="active"><a class="tablinks" id="button4" href="thursday-afternoon.html"><b>09.06 Nachmittag</b></a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="nav-mobil">
+        <header class="header">
+            <div id="navigation">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <img src="img/GEO_Summit_trans.png" id="logo-mob">
+            <h3 id="dateTextMob">Do Nachmittag</h3>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>08.06 Morgen</b></a></li>
+                <li><a href="wednesday-afternoon.html"><b>08.06 Nachmittag</b></a></li>
+                <li><a href="thursday-morning.html"><b>09.06 Morgen</b></a></li>
+                <li><a href="thursday-afternoon.html"><b>09.06 Nachmittag</b></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contentLayer"></div>
+    <div id="content">
+        <main id="main">
+            <div class="room">
+                <h2>Kongressraum 1</h2>
+                <div class="tile-group-empty"></div>
+                <div class="tile-group-after-break">
+                    <div class="tile">
+                        <table>
+                            <tr>
+                                <th colspan="3">ITS-CH-TRACK: Les géodonnées dans le transport intelligent</th>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 15:30</td>
+                                <td>Gestion intelligente du trafic multimodal pour la ville de Genève</td>
+                                <td>Frau Simone Amorosi</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:00</td>
+                                <td>Les solutions de gestion de flotte, la vraie révolution de la mobilité autonome</td>
+                                <td>M. Raphaël Gindrat</td>
+                            </tr>
+                            <tr>
+                                <td>16:00 - 16:30</td>
+                                <td>Neue Herausforderungen an Geo-Datenbanken und vernetzte Systeme bei der Umsetzung von Elektromobilität in der Fläche</td>
+                                <td>Herr Thomas Czekala</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <h2>Kongressraum 2</h2>
+                <div class="tile-group-before-break">
+                    <div class="tile">
+                        <table>
+                            <tr>
+                                <th colspan="3">GEOSummit & DLT</th>
+                            </tr>
+                            <tr>
+                                <td>13:30 - 13:45</td>
+                                <td>Grussworte von Bundesrat Guy Parmelin</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>13:45 - 14:15</td>
+                                <td>Keynote S3 – Swiss Space Systems : entre rêve et réalité</td>
+                                <td>M. Pascal Jaussi</td>
+                            </tr>
+                            <tr>
+                                <td>14:15 - 14:30</td>
+                                <td>Vorstellung Studie Marktanalyse und Wirtschaftsmonitoring Geoinformationsmarkt Schweiz</td>
+                                <td>Herr Alain Buogo, Mr Christoph Käser</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="pause-tile">
+                    <p class="pause">14:30 - 15:00 Pause</p>
+                </div>
+                <div class="tile-group-after-break">
+                    <div class="tile">
+                        <table>
+                            <tr>
+                                <th colspan="3">Innovation und Trends V</th>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 15:30</td>
+                                <td>Walliser Geoportal mit ArcGIS-Online</td>
+                                <td>Herr Rainer Oggier</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:00</td>
+                                <td>swissBUILDINGS3D - Der detaillierte 3D-Gebäudedatensatz der Schweiz entwickelt sich weiter</td>
+                                <td>Herr Stefan Zingg</td>
+                            </tr>
+                            <tr>
+                                <td>16:00 - 16:30</td>
+                                <td>Mobile Imaging System: Moderne Datenerfassung mit georeferenzierten Bildern</td>
+                                <td>Herr Jörg Amend</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <h2>Kongressraum 3</h2>
+                <div class="tile-group-empty"></div>
+                <div class="tile-group-after-break">
+                    <div class="tile">
+                        <table>
+                            <tr>
+                                <th colspan="3">Journée Romandie II</th>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 15:30</td>
+                                <td>Faciliter la participation collective avec la réalité augmentée</td>
+                                <td>Mme. Sarah Composto</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:00</td>
+                                <td>QDaedalus: un système de mesure vidéo-tachéomètrique aux multiples facettes</td>
+                                <td>M. Sébastien Guillaume</td>
+                            </tr>
+                            <tr>
+                                <td>16:00 - 16:30</td>
+                                <td>Modélisation 3D et Photogrammétrie au service de l’auscultation surfacique</td>
+                                <td>M. Guillaume Chapotte</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <h2>Kongressraum 4</h2>
+                <div class="tile-group-empty"></div>
+                <div class="tile-group-after-break">
+                    <div class="tile">
+                        <table>
+                            <tr>
+                                <th colspan="3">Geodaten-Infrastruktur II</th>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 15:30</td>
+                                <td>Vom minimalen Geodatenmodell zu produktiven Geodatenbanken</td>
+                                <td>Herr Dr. Peter Staub</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:00</td>
+                                <td>Handlungsanweisungen für die modellkonforme Bereitstellung von Geodaten mittels Download-Diensten</td>
+                                <td>Herr Kurt Spälti</td>
+                            </tr>
+                            <tr>
+                                <td>16:00 - 16:30</td>
+                                <td>Anwendungsprofil Geodienste eCH-0056: Ein Standard im Wandel</td>
+                                <td>Herr Beat Tschanz</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <h2>Kongressraum 7</h2>
+                <div class="tile-group-empty"></div>
+                <div class="tile-group-after-break">
+                    <div class="tile">
+                        <table>
+                            <tr>
+                                <th colspan="3">Städte und Gemeinden</th>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 15:30</td>
+                                <td>Der Weg zum verbindlichen Leitungskataster in der Stadt und im Kanton Zürich</td>
+                                <td>Herr Christian Gees</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:00</td>
+                                <td>Kampf dem Verkehrskollaps - Geodaten und Anwendungen für sinnvolle Mobilität</td>
+                                <td>Herr Martin Probst</td>
+                            </tr>
+                            <tr>
+                                <td>16:00 - 16:30</td>
+                                <td>Cockpit als effizientes Werkzeuge für das strategische Management kommunaler Infrastrukturen</td>
+                                <td>Herr Dr. Jürg Lüthy</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <h2>Kongressraum M1</h2>
+                <div class="tile-group-empty"></div>
+                <div class="tile-group-after-break">
+                    <div class="tile">
+                        <table>
+                            <tr>
+                                <th colspan="3">Raumplanung und Verkehr II</th>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 15:30</td>
+                                <td>Nutzung des Untergrunds wartet (nicht) auf die Gesetzgebung</td>
+                                <td>Herr Dr. iur. Meinrad Huser</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:00</td>
+                                <td>Vom CityGML-Stadtmodell zur 3D-Szene im Web – am Beispiel der Stadt Winterthur</td>
+                                <td>Frau Isabella Flüeler</td>
+                            </tr>
+                            <tr>
+                                <td>16:00 - 16:30</td>
+                                <td>Wandel in 3D mitgestalten</td>
+                                <td>Herr Roger Michelon</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <h2>Kongressraum M2</h2>
+                <div class="tile-group-empty"></div>
+                <div class="tile-group-after-break">
+                    <div class="tile">
+                        <table>
+                            <tr>
+                                <th colspan="3">Energie II</th>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 15:30</td>
+                                <td>Windatlas Schweiz</td>
+                                <td>Frau MSc Environmental Geoscience Sara Koller</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:00</td>
+                                <td>GIS-basierte Modelle zur räumlichen Energieplanung in Kommunen</td>
+                                <td>Frau Prof. Dr. Susanne Kytzia</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="infos">
+                <p>Postersession 12:00 - 13:30 Eingang Messe</p>
+                <p>Messe-Forum 9:00 - 17:30 Messe</p>
+                <p>Mittags-Talk SIA**         12.30 - 13.00 Messe-Forum</p>
+                <p>Grusswort und Keynote 13.30 - 14.30 Kongress</p>
+                <p>GeoBeer  16.30 Restaurant+Messe</p>
+                <p>Preisverleihung GEOSchool Day 16.30 Messe</p>
+            </div>
+        </main>
+        <div class="footerBox">
+            <div class="footer">
+                <div id="sogi" class="logoLinkBox">
+                <span class="logoLink">
+                    <a href="http://sogi.ch"><img src="img/sogi.gif" alt="SOGI" /> </a>
+                 </span>
+                </div>
+
+                <div id="powerby" class="logoLinkBox">Powered by</div>
+
+                <div id="hsr" class="logoLinkBox">
+                <span class="logoLink">
+                    <a href="https://hsr.ch"><img src="img/hsr.png" alt="HSR" /> </a>
+                </span>
+                </div>
+                <div id="esri" class="logoLinkBox">
+                <span class="logoLink">
+                    <a href="http://esri.com"><img src="img/esri.png" alt="ESRI" /> </a>
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="libs/script/jquery-1.11.3.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="menu.js" ></script>
+<script type="text/javascript" src="mobilemenu.js"></script>
+
+</html>

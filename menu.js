@@ -1,27 +1,3 @@
-function buttonOneAction() {
-    document.getElementById("main").innerHTML = document.getElementById("part1").innerHTML;
-    document.getElementById("dateTextMob").textContent = "Mi Morgen";
-    setGroupSizes();
-}
-
-function buttonTwoAction() {
-    document.getElementById("main").innerHTML = document.getElementById("part2").innerHTML;
-    document.getElementById("dateTextMob").textContent = "Mi Nachmittag";
-    setGroupSizes();
-}
-
-function buttonThreeAction() {
-    document.getElementById("main").innerHTML = document.getElementById("part3").innerHTML;
-    document.getElementById("dateTextMob").textContent = "Do Morgen";
-    setGroupSizes();
-}
-
-function buttonFourAction() {
-    document.getElementById("main").innerHTML = document.getElementById("part4").innerHTML;
-    document.getElementById("dateTextMob").textContent = "Do Nachmittag";
-    setGroupSizes();
-}
-
 $(window).resize(function () {
     setGroupSizes();
 });
@@ -73,8 +49,3 @@ function tileHeightToHighest(elements) {
         // }
     }
 }
-
-$(document).on("click", 'ul li', function(){
-    $('ul li').removeClass('active');
-    $(this).addClass('active');
-});
