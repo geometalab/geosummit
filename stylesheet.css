@@ -186,6 +186,11 @@ body {
 }
 
 @media all and (max-width: 800px) {
+
+    .footer {
+        flex-direction: column;
+    }
+
     .header {
         display: flex;
         background-color: darkgray;
@@ -270,13 +275,13 @@ body {
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
-        background: red;
-        background: -moz-linear-gradient(top, red 0%, #2d2c2d 100%);
+        background: #bfc0c1;
+        background: -moz-linear-gradient(top, #bfc0c1 0%, #2d2c2d 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e3c3d), color-stop(100%, #2d2c2d));
-        background: -webkit-linear-gradient(top, red 0%, #2d2c2d 100%);
-        background: -o-linear-gradient(top, red 0%, #2d2c2d 100%);
-        background: -ms-linear-gradient(top, red 0%, #2d2c2d 100%);
-        background: linear-gradient(to bottom, red 0%, #2d2c2d 100%);
+        background: -webkit-linear-gradient(top, #bfc0c1 0%, #2d2c2d 100%);
+        background: -o-linear-gradient(top, #bfc0c1 0%, #2d2c2d 100%);
+        background: -ms-linear-gradient(top, #bfc0c1 0%, #2d2c2d 100%);
+        background: linear-gradient(to bottom, #bfc0c1 0%, #2d2c2d 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3384B5', endColorstr='#2d2c2d', GradientType=0);
     }
 
