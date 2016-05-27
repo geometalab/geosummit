@@ -64,13 +64,51 @@ body {
     width: 100%;
     border: solid 1px;
     margin: 5px 5px 20px;
-    font-size: 1.2em;
     background-color: #dcddde;
     padding-left: 5px;
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
 }
 
+.infos p {
+    margin: 0;
+}
+
+#powerby {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.footerBox {
+    width: 99%;
+    margin: 5px 5px 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.logoLinkBox {
+    display: flex;
+    padding: 15px 30px;
+    height: 40px;
+}
+
+.logoLinkBox img {
+    height: 40px;
+}
+
+#sogi img {
+    height: 70px;
+}
+
+.toplogoLinkBox {
+    display: inline-block;
+    padding: 15px 30px;
+}
 @media all and (max-width: 1472px){
     .room {
         max-width: calc(100% / 3 - 10px);
@@ -138,7 +176,10 @@ body {
     }
 
     /* Change background color of links on hover */
-    ul.tab li a:hover {background-color: #ddd;}
+    ul.tab li a:hover {
+        cursor: pointer;
+        background-color: #ddd;
+    }
 
     /* Create an active/current tablink class */
     ul.tab li a:focus, .active {background-color: #ccc;}
