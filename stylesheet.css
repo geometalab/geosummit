@@ -70,6 +70,24 @@ body {
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
 }
 
+.twitter {
+    display: none;
+}
+
+@media all and (min-width: 3000px){
+    .twitter {
+        display: block;
+        min-width: 350px;
+        max-width: calc(100% / 8 - 10px);
+        flex-basis: calc(100% / 8 - 10px);
+    }
+
+    .room {
+        max-width: calc(100% / 8 - 10px);
+        flex-basis: calc(100% / 8 - 10px);
+    }
+}
+
 @media all and (max-width: 2552px){
     .room {
         max-width: calc(100% / 6 - 10px);
