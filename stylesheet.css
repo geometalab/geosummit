@@ -24,8 +24,8 @@ body {
 .room {
     margin: 5px;
     min-width: 350px;
-    max-width: calc(100% / 4 - 10px);
-    flex-basis: calc(100% / 4 - 10px);
+    max-width: calc(100% / 7 - 10px);
+    flex-basis: calc(100% / 7 - 10px);
 }
 
 .tile, .pause-tile, .tile-group-before-break {
@@ -69,6 +69,27 @@ body {
     padding-left: 5px;
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media all and (max-width: 2552px){
+    .room {
+        max-width: calc(100% / 6 - 10px);
+        flex-basis: calc(100% / 6 - 10px);
+    }
+}
+
+@media all and (max-width: 2192px){
+    .room {
+        max-width: calc(100% / 5 - 10px);
+        flex-basis: calc(100% / 5 - 10px);
+    }
+}
+
+@media all and (max-width: 1832px){
+    .room {
+        max-width: calc(100% / 4 - 10px);
+        flex-basis: calc(100% / 4 - 10px);
+    }
 }
 
 @media all and (max-width: 1472px){
