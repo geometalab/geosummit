@@ -63,8 +63,7 @@ body {
 .infos {
     width: 100%;
     border: solid 1px;
-    margin: 5px 5px 20px;
-    font-size: 1.2em;
+    margin: 5px 5px 5px;
     background-color: #dcddde;
     padding-left: 5px;
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
@@ -116,6 +115,46 @@ body {
     }
 }
 
+.infos p {
+    margin: 0;
+}
+
+#powerby {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.footerBox {
+    width: 99%;
+    margin: 5px 5px 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.logoLinkBox {
+    display: flex;
+    padding: 15px 30px;
+    height: 40px;
+}
+
+.logoLinkBox img {
+    height: 40px;
+}
+
+#sogi img {
+    height: 70px;
+}
+
+.toplogoLinkBox {
+    display: inline-block;
+    padding: 15px 30px;
+}
+
 @media all and (min-width: 800px) {
     .header {
         display: inline-flex;
@@ -159,13 +198,21 @@ body {
     }
 
     /* Change background color of links on hover */
-    ul.tab li a:hover {background-color: #ddd;}
+    ul.tab li a:hover {
+        cursor: pointer;
+        background-color: #ddd;
+    }
 
     /* Create an active/current tablink class */
     ul.tab li a:focus, .active {background-color: #ccc;}
 }
 
 @media all and (max-width: 800px) {
+
+    .footer {
+        flex-direction: column;
+    }
+
     .header {
         display: flex;
         background-color: darkgray;
@@ -250,13 +297,13 @@ body {
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
-        background: red;
-        background: -moz-linear-gradient(top, red 0%, #2d2c2d 100%);
+        background: #bfc0c1;
+        background: -moz-linear-gradient(top, #bfc0c1 0%, #2d2c2d 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e3c3d), color-stop(100%, #2d2c2d));
-        background: -webkit-linear-gradient(top, red 0%, #2d2c2d 100%);
-        background: -o-linear-gradient(top, red 0%, #2d2c2d 100%);
-        background: -ms-linear-gradient(top, red 0%, #2d2c2d 100%);
-        background: linear-gradient(to bottom, red 0%, #2d2c2d 100%);
+        background: -webkit-linear-gradient(top, #bfc0c1 0%, #2d2c2d 100%);
+        background: -o-linear-gradient(top, #bfc0c1 0%, #2d2c2d 100%);
+        background: -ms-linear-gradient(top, #bfc0c1 0%, #2d2c2d 100%);
+        background: linear-gradient(to bottom, #bfc0c1 0%, #2d2c2d 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3384B5', endColorstr='#2d2c2d', GradientType=0);
     }
 
