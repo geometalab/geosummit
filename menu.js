@@ -53,3 +53,22 @@ function tileHeightToHighest(elements) {
         // }
     }
 }
+
+function upDateSite() {
+    //getDay() Mittwoch 3, Do 4
+    var now = new Date();
+    if(now.getDay() == 3 && now.getHours() < 10 && now.getMinutes() < 55){
+        window.location.href= "index.html";
+    } else if(now.getDay() == 3 && now.getHours() > 14 && now.getMinutes() > 25) {
+        window.location.href= "wednesday-afternoon.html";
+    } else if(now.getDay() == 4 && now.getHours() < 10 && now.getMinutes() < 55) {
+        window.location.href= "thursday-morning.html";
+    } else if(now.getDay() == 4 && now.getHours() > 14 && now.getMinutes() > 25) {
+        window.location.href= "thursday-afternoon.html";
+    } else {
+        window.location.href = "http://megageogame2.herokuapp.com/"
+    }
+
+    setGroupSizes();
+    setTimeout(upDateSite, 1000000);
+}
