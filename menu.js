@@ -6,11 +6,15 @@ function setGroupSizes() {
     var before = document.getElementById("main").getElementsByClassName("tile-group-before-break");
     var after = document.getElementById("main").getElementsByClassName("tile-group-after-break");
     var empty = document.getElementById("main").getElementsByClassName("tile-group-empty");
-    var tileGroups = $.makeArray($.merge($.merge(before, after), empty));
+    var tileGroups = $.makeArray(before.concat(after).concat(empty));
 
     for(var i = 0; i < $(tileGroups).length; i++) {
         var tile = $(tileGroups).get(i);
         $(tile).css("height", "");
+    }
+
+    if ($(window).width() <= 800) {
+        return;
     }
 
     tileHeightToHighest(before);
