@@ -4,7 +4,9 @@ html {
 
 body {
     background-color: #ebebeb;
-    font-family: Arial Narrow;
+    font-family: "Arial Narrow", "Arial", sans-serif;
+    font-stretch: condensed;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -75,16 +77,23 @@ body {
 }
 
 @media all and (min-width: 3000px){
+    body{
+        font-size: 1.4em;
+    }
+
     .twitter {
         display: block;
         min-width: 350px;
-        max-width: calc(100% / 8 - 10px);
-        flex-basis: calc(100% / 8 - 10px);
+        max-width: calc(100% / 9 - 10px);
+        flex-basis: calc(100% / 9 - 10px);
     }
 
     .room {
-        max-width: calc(100% / 8 - 10px);
-        flex-basis: calc(100% / 8 - 10px);
+        max-width: calc(100% / 8 - 5px);
+        flex-basis: calc(100% / 8 - 5px);
+    }
+    .footer{
+        position: fixed;
     }
 }
 
