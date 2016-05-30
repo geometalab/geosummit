@@ -12,6 +12,9 @@ body {
     overflow-x: hidden;
 }
 
+#logo {
+    margin: 10px;
+}
 
 #main {
     display: -webkit-box;
@@ -130,8 +133,8 @@ body {
 
     /* Style the list */
     ul.tab {
+        margin: 10px 0;
         list-style-type: none;
-        margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: darkgray;
