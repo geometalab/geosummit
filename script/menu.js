@@ -75,5 +75,9 @@ function setSitePerTime() {
 }
 
 function upDateSite() {
-    setTimeout(setSitePerTime, 60000);
+    if ($(window).width() > 3000) {
+        setTimeout(setSitePerTime, 300000);
+    } else {
+        setGroupSizes();
+    }
 }
