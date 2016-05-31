@@ -3,9 +3,9 @@ $(window).resize(function () {
 });
 
 function setGroupSizes() {
-    var before = document.getElementById("main").getElementsByClassName("tile-group-before-break");
-    var after = document.getElementById("main").getElementsByClassName("tile-group-after-break");
-    var empty = document.getElementById("main").getElementsByClassName("tile-group-empty");
+    var before = Array.prototype.slice.call(document.getElementById("main").getElementsByClassName("tile-group-before-break"));
+    var after = Array.prototype.slice.call(document.getElementById("main").getElementsByClassName("tile-group-after-break"));
+    var empty = Array.prototype.slice.call(document.getElementById("main").getElementsByClassName("tile-group-empty"));
     var tileGroups = $.makeArray(before.concat(after).concat(empty));
 
     for(var i = 0; i < $(tileGroups).length; i++) {
