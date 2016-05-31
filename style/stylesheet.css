@@ -30,18 +30,14 @@ body {
     margin-bottom: 5px;
 }
 
-.pause-tile {
-    background-color: #dcddde;
-}
-
-.tile table {
+.pause-tile, .tile table {
     background-color: #dcddde;
     min-width: 100%;
-    border: solid 1px;
     border-collapse: collapse;
     -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
 }
+
 .tile table td {
     padding: 5px;
     border: solid 1px;
