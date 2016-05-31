@@ -58,17 +58,17 @@ function setSitePerTime() {
     //getDay() Mittwoch 3, Do 4
     var now = new Date();
     if(now.getDay() == 3 && now.getHours() < 10 && now.getMinutes() < 55){
-        window.location.href= "../index.html";
+        window.location.href= "../geosummit/index.html";
     } else if(now.getDay() == 3 && now.getHours() > 14 && now.getMinutes() > 25) {
-        window.location.href= "../wednesday-afternoon.html";
+        window.location.href= "../geosummit/wednesday-afternoon.html";
     } else if(now.getDay() == 4 && now.getHours() < 10 && now.getMinutes() < 55) {
-        window.location.href= "../thursday-morning.html";
+        window.location.href= "../geosummit/thursday-morning.html";
     } else if(now.getDay() == 4 && now.getHours() > 14 && now.getMinutes() > 25) {
-        window.location.href= "../thursday-afternoon.html";
+        window.location.href= "../geosummit/thursday-afternoon.html";
     } else if (now.getDay() == 3 && now.getHours() > 10 && now.getMinutes() > 55) {
-        window.location.href = "../megageogame.html";
+        window.location.href = "../geosummit/megageogame.html";
     } else {
-        window.location.href = "../index.html";
+        window.location.href = "../geosummit/index.html";
     }
 
     setGroupSizes();
