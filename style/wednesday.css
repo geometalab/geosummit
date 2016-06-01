@@ -18,6 +18,11 @@
         flex-basis: calc(100% / 7 - 10px);
     }
 
+    .mediaHeader {
+        background-color: darkgray;
+        margin: 0;
+    }
+
     .room {
         max-width: calc(100% / 7 - 10px);
         flex-basis: calc(100% / 7 - 10px);
