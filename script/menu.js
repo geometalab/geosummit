@@ -3,9 +3,9 @@ $(window).resize(function () {
 });
 
 function setGroupSizes() {
-    var before = document.getElementById("main").getElementsByClassName("tile-group-before-break");
-    var after = document.getElementById("main").getElementsByClassName("tile-group-after-break");
-    var empty = document.getElementById("main").getElementsByClassName("tile-group-empty");
+    var before = Array.prototype.slice.call(document.getElementById("main").getElementsByClassName("tile-group-before-break"));
+    var after = Array.prototype.slice.call(document.getElementById("main").getElementsByClassName("tile-group-after-break"));
+    var empty = Array.prototype.slice.call(document.getElementById("main").getElementsByClassName("tile-group-empty"));
     var tileGroups = $.makeArray(before.concat(after).concat(empty));
 
     for(var i = 0; i < $(tileGroups).length; i++) {
@@ -54,21 +54,30 @@ function tileHeightToHighest(elements) {
     }
 }
 
-function upDateSite() {
+function setSitePerTime() {
     //getDay() Mittwoch 3, Do 4
     var now = new Date();
     if(now.getDay() == 3 && now.getHours() < 10 && now.getMinutes() < 55){
-        window.location.href= "../index.html";
+        window.location.href= "../geosummit/index.html";
     } else if(now.getDay() == 3 && now.getHours() > 14 && now.getMinutes() > 25) {
-        window.location.href= "../wednesday-afternoon.html";
+        window.location.href= "../geosummit/wednesday-afternoon.html";
     } else if(now.getDay() == 4 && now.getHours() < 10 && now.getMinutes() < 55) {
-        window.location.href= "../thursday-morning.html";
+        window.location.href= "../geosummit/thursday-morning.html";
     } else if(now.getDay() == 4 && now.getHours() > 14 && now.getMinutes() > 25) {
-        window.location.href= "../thursday-afternoon.html";
+        window.location.href= "../geosummit/thursday-afternoon.html";
+    } else if (now.getDay() == 3 && now.getHours() > 10 && now.getMinutes() > 55) {
+        window.location.href = "../geosummit/megageogame.html";
     } else {
-        window.location.href = "http://megageogame2.herokuapp.com/"
+        window.location.href = "../geosummit/index.html";
     }
 
     setGroupSizes();
-    setTimeout(upDateSite, 1000000);
+}
+
+function upDateSite() {
+    if ($(window).width() > 3000) {
+        setTimeout(setSitePerTime, 300000);
+    } else {
+        setGroupSizes();
+    }
 }
