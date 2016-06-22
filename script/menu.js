@@ -75,6 +75,8 @@ function setSitePerTime() {
 }
 
 function upDateSite() {
+    console.log(new Date().getDay());
+    console.log(new Date().getHours());
     if ($(window).width() > 3000) {
         setTimeout(setSitePerTime, 300000);
     } else {
